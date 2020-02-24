@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Portfolio | Scott Conover </title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+<!-- Not sure what to do for projects and contact link. I don't have a
+projects page so should I just link it all back to index.html or just get rid of
+it? Should I link the contact in nav to the footer and just have it shoot down
+there everytime? -->
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <a href="index.html"><p id="logoname">Scott Conover</p></a>
+      <a href="#projects">Projects</a>
+      <a href="about.html">About</a>
+      <a href="images/resume.png" download><img src="images/download.png"></a>
+      <a href="images/resume.png" target="_blank">Resume</a>
+      <a href="#footer">Contact</a>
+    </nav>
+
+<div id="container">
+    <section id="hero">
+      <h1> Hi! I'm Scott</h1>
+      <h2>UX Designer, Front-End Developer, and drone pilot
+      extraordinaire using human centered design to create
+      beautiful user experiences. </h2>
+      <!--Is there a way to show one of the two pics depending on the screen
+      size or would it be easier to just have a universal symbol? -->
+      <img src="images/mouse.png"> <img src="images/hand.png">
+    </section>
+
+    <section id="projects">
+      <div class="wolf projectcard">
+        <img src="images/wolf.png" class="cardpicture">
+        <h3> WOLF </h3>
+        <h4> Design | Research | Branding </h4>
+        <p> A multifaceted application capable of creating
+          and sharing content, managing storage, and communicating
+          through messenger.
+        </p>
+        <button type="button">
+          <a href="wolf.html"> View Case Study</a>
+        </button>
+      </div>
+
+      <div class="busybus projectcard">
+        <img src="images/busybus.png" class="cardpicture">
+        <h3> BusyBus </h3>
+        <h4> Development | Research | Design </h4>
+        <p> Public transportation app designed for users to quickly
+          access public bus ETA's, locations, cancellations, and delays.
+        </p>
+        <button type="button" class="viewcasestudy">
+          <a href="busybus.html"> View Case Study</a>
+        </button>
+        </div>
+    </section>
+<!-- the images are taking up space but aren't appearing on the page for some
+reason-->
+    <footer id="footer">
+      <img src="images/mail.png">
+      <img src="images/linkedin.png">
+      <img src="images/instagram.png">
+      <img src="images/dribbble.png">
+      <!--Is a copyright symbol necessary here?-->
+      <p class="copyright">
+        2020 Copyright | Designed and Developed by Scott Conover
+      </p>
+      <p class="copyright">
+        Icons from FlatIcon
+      </p>
+    </footer>
+</div>
+
+  </body>
+</html>
