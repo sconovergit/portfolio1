@@ -3,76 +3,92 @@
   <head>
     <meta charset="utf-8">
     <title> Portfolio | Scott Conover </title>
+    <link rel="stylesheet" href="https://use.typekit.net/kwh8jxm.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-<!-- Not sure what to do for projects and contact link. I don't have a
-projects page so should I just link it all back to index.html or just get rid of
-it? Should I link the contact in nav to the footer and just have it shoot down
-there everytime? -->
-    <nav>
-      <a href="index.html"><img src="images/logo.png"></a>
-      <a href="index.html"><p id="logoname">Scott Conover</p></a>
-      <a href="#projects">Projects</a>
-      <a href="about.html">About</a>
-      <a href="images/resume.png" download><img src="images/download.png"></a>
-      <a href="images/resume.png" target="_blank">Resume</a>
-      <a href="#footer">Contact</a>
+
+    <nav class="nav-container">
+      <div class="nav">
+        <div class="leftnav">
+        <a href="index.html"><img src="images/logo.png"></a>
+        <a href="index.html"><p class="name">Scott Conover</p></a>
+      </div>
+        <!--<a href="#projects">Projects</a>
+        <a href="about.html">About</a>
+        <a href="images/resume.png" target="_blank"><img src="images/download.png"></a>
+        <a href="images/resume.png" target="_blank">Resume</a>
+        <a href="contactme.html">Contact</a> -->
+        <div class="rightnav">
+        <img src="images/mobilemenu.png" class="menu">
+        </div>
+      </div>
     </nav>
 
-<div id="container">
-    <section id="hero">
-      <h1> Hi! I'm Scott</h1>
-      <h2>UX Designer, Front-End Developer, and drone pilot
-      extraordinaire using human centered design to create
-      beautiful user experiences. </h2>
-      <!--Is there a way to show one of the two pics depending on the screen
-      size or would it be easier to just have a universal symbol? -->
-      <img src="images/mouse.png"> <img src="images/hand.png">
-    </section>
+<div class ="container">
+    <div class="hero-container">
+      <div id="hero">
+        <h1 class="heroname"> Hi! I'm Scott</h1>
+        <h2>UX Designer, Front-End Developer, and drone pilot
+        extraordinaire using human centered design to create
+        beautiful user experiences. </h2>
+        <div class="scroll">
+        <img src="images/hand.png">
+        </div>
+      </div>
+  </div>
 
-    <section id="projects">
-      <div class="wolf projectcard">
         <img src="images/wolf.png" class="cardpicture">
+        <div id="wolf-container">
+          <div class="wolf">
         <h3> WOLF </h3>
         <h4> Design | Research | Branding </h4>
         <p> A multifaceted application capable of creating
           and sharing content, managing storage, and communicating
           through messenger.
         </p>
-        <button type="button">
-          <a href="wolf.html"> View Case Study</a>
+        <a href="wolf.html">
+          <button type="button">
+           View Case Study
         </button>
-      </div>
+      </a>
+    </div>
+  </div>
 
-      <div class="busybus projectcard">
         <img src="images/busybus.png" class="cardpicture">
+        <div id="busybus-container">
+          <div class="busybus">
         <h3> BusyBus </h3>
         <h4> Development | Research | Design </h4>
         <p> Public transportation app designed for users to quickly
           access public bus ETA's, locations, cancellations, and delays.
         </p>
-        <button type="button" class="viewcasestudy">
-          <a href="busybus.html"> View Case Study</a>
-        </button>
-        </div>
+        <a href="busybus.html">
+          <button type="button" class="viewcasestudy">
+            View Case Study
+          </button>
+        </a>
+      </div>
+      </div>
     </section>
-<!-- the images are taking up space but aren't appearing on the page for some
-reason-->
-    <footer id="footer">
+</div>
+    <div id="footer-container">
+        <div class="footer-pics">
       <img src="images/mail.png">
       <img src="images/linkedin.png">
       <img src="images/instagram.png">
       <img src="images/dribbble.png">
-      <!--Is a copyright symbol necessary here?-->
-      <p class="copyright">
+    </div>
+      <div class="footer-words">
+      <p>
         2020 Copyright | Designed and Developed by Scott Conover
       </p>
-      <p class="copyright">
+      <p>
         Icons from FlatIcon
       </p>
-    </footer>
-</div>
+    </div>
+    </div>
 
   </body>
 </html>

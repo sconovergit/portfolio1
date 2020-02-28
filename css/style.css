@@ -1,0 +1,173 @@
+/*general*/
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*navigation*/
+.nav-container{
+  display:flex;
+  justify-content:center;
+}
+.nav{
+  width:90%;
+  display:flex;
+  justify-content:space-between;
+}
+.leftnav{
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+}
+.rightnav{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+}
+.name{
+  margin: 2rem 1rem;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 800;
+}
+/*hero section*/
+.hero-container{
+  display:flex;
+  justify-content:flex-start;
+  margin:5rem 5%;
+}
+.hero{
+  width:90%;
+  display:flex;
+}
+.heroname{
+  width:100%;
+}
+.scroll{
+  display:flex;
+  justify-content: center;
+}
+
+/*wolf card*/
+
+#wolf-container{
+  display:flex;
+  justify-content:flex-start;
+  margin:5rem 5%;
+}
+.wolf{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+/*busybus card*/
+
+#busybus-container{
+  display:flex;
+  justify-content:flex-start;
+  margin:5rem 5%;
+}
+.busybus{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+}
+img.cardpicture{
+  display:flex;
+  width:100%;
+}
+#footer-container{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  background-color:#000000;
+  color:white;
+}
+
+.footer-pics{
+  display:flex;
+  justify-content: center;
+  padding: 3rem 0;
+  width:100%;
+}
+.footer-pics >img{
+  margin:2rem 2rem;
+}
+
+.footer-words{
+  display:flex;
+  width:100%;
+  justify-content:center;
+  font-size:1.4rem;
+}
+/*#footer{
+  width:100%;
+  background-color: #000000;
+  color: white;
+  text-align:center;
+}*/
+a{
+  text-decoration:none;
+}
+h1{
+  font-size:4rem;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 800;
+  margin: 2rem 0;
+
+}
+h2{
+  font-size:2.2rem;
+  line-height: 5rem;
+  margin: 2rem 0;
+}
+h3{
+  font-size:2rem;
+  font-family: 'Acumin Pro', sans-serif;
+  font-weight:bold;
+  margin: 2rem 0;
+}
+
+h4{
+  font-size:1.4rem;
+  color: rgba(0,0,0, 0.5);
+}
+
+h5{
+  font-size:1.4rem;
+  font-family: 'Acumin Pro', sans-serif;
+  text-transform: uppercase;
+}
+p{
+  font-size:1.6rem;
+  text-align:left;
+  margin: 2rem 0;
+  line-height: 2.7rem;
+}
+button{
+  color:white;
+  font-size:2rem;
+  background-color: #000000;
+  padding: 18px 32px;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+/*Projects*/
+
+.firstsentence{
+  font-family: 'Acumin Pro', sans-serif;
+  font-weight:800;
+}
+.karla{
+  font-family:'Karla';
+}
+.bold{
+  font-weight:bold;
+}
+.italic{
+  font-style:italic;
+}
