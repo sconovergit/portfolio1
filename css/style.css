@@ -31,6 +31,7 @@ html{
   margin: 2rem 1rem;
   font-family: acumin-pro, sans-serif;
   font-weight: 800;
+  color:#000000;
 }
 /*hero section*/
 .hero-container{
@@ -140,6 +141,7 @@ h5{
   font-size:1.4rem;
   font-family: 'Acumin Pro', sans-serif;
   text-transform: uppercase;
+  margin: 5rem 0;
 }
 p{
   font-size:1.6rem;
@@ -154,8 +156,15 @@ button{
   padding: 18px 32px;
   font-weight: bold;
   border-radius: 0.5rem;
+  margin: 2rem 0;
 }
-
+a:visited{
+  text-decoration:none;
+}
+button > a {
+  text-decoration:none;
+  color:white;
+}
 /*Projects*/
 
 .firstsentence{
