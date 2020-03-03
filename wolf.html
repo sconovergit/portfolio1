@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title> Portfolio | Scott Conover </title>
     <link rel="stylesheet" href="https://use.typekit.net/kwh8jxm.css">
-    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -26,10 +26,9 @@
         </div>
       </div>
     </nav>
-
-    <div class="container">
-      <section id ="opening">
-        <img src="images/wolf1.png">
+    <img src="images/wolf1.png" class="cardpicture">
+      <div class="hero-container">
+        <div id="hero">
         <h1>WOLF</h1>
         <h2>Cloud storage application that combines content
             creation, storage management,  and communication
@@ -39,9 +38,11 @@
         <button type="button">
           <a href="https://invis.io/EKUS93HJRVH" target="_blank">View Prototype</a>
         </button>
-      </section>
-<!--Will text-transform all h5's to be uppercase in css-->
-      <section id="problem">
+      </div>
+      </div>
+
+      <div class="problem-container">
+        <div class="problem">
         <h5> Problem </h5>
         <p class="firstsentence">
           Using multiple applications slows workflow and
@@ -53,9 +54,11 @@
           had multiple uses to make a teams workflow easier
           while also having a cloud space to store assets.
         </p>
-    </section>
+      </div>
+    </div>
 
-    <section id="solution">
+    <div class="solution-container">
+      <div class="solution">
       <h5> Solution </h5>
       <p class="firstsentence">
         A multifaceted application capable of creating and sharing
@@ -66,29 +69,28 @@
         user needs within a single click, allowing them to manipulate their
         assets as needed and reach out to fellow colleagues quickly.
       </p>
+    </div>
+    </div>
+    <img src="images/wolfdesktop.png" class="cardpicture">
 
-      <img src="images/wolfdesktop.png">
-
-    </section>
-
-    <section id="usersurveys">
+    <div class="survey-container">
+      <div class="survey">
       <h5> User Surveys </h5>
       <p class="firstsentence">
         Get to know our users
       </p>
       <p>
-        I used surveys to limit the scope of what users wanted.  This step showed
-        me that uploading, creating, sharing, storing content, and collaboration
-        were the most important features for users.  It also showed me that most
-        users were going to be very familiar with computers and how applications
-        work.
+        I used surveys to limit the scope of what users wanted.  This step showed me that uploading, creating, sharing, storing content, and collaboration were the most important features for users.  It also showed me that most users were going to be very familiar with computers and how applications work.
       </p>
       <button type="button">
         <a href="surveyurl" target="_blank">View Survey</a>
       </button>
-    </section>
+    </div>
+  </div>
 
-    <section id="competitiveanalysis">
+
+    <div class="competitiveanalysis-container">
+      <div class="competitiveanalysis">
       <h5> Competitive Analysis </h5>
       <p class="firstsentence">
         What's everyone else doing?
@@ -103,30 +105,36 @@
       <button type="button">
         <a href="competitiveanalysisurl" target="_blank">Full Analysis</a>
       </button>
+      <div class="compgroup">
       <img src="images/googledrive.png">
       <p class="companalysis">Google Drive</p>
+    </div>
       <p>
         Strong, prominent company with lots of features and ways to create
         content.  Very organized interface and easy to use.  Capable of
         interconnectivity between apps and their only competition has only
         recently entered the market.
       </p>
+    <div class="compgroup">
       <img src="images/instagram1.png">
       <p class="companalysis">Instagram</p>
+    </div>
       <p>
         Free to use, extremely popular social media app.  Minimal options for
         content creation but very easy to connect with people and make
         connections. Organization is hard to use and there are lots of competitors
         already in the market.
       </p>
+    <div class="compgroup">
       <img src="images/pinterest.png">
       <p class="companalysis">Pinterest</p>
+    </div>
       <p>
         Unique app that is very simple to use and organize.  Few features and
-        becomes repetitive quickly with a limited market.  Few competitors but
-        current competitors have very similar features.
+        becomes repetitive quickly with a limited market.  Few competitors but current competitors have very similar features.
       </p>
-    </section>
+    </div>
+    </div>
 
     <section id="userpersonas">
       <h5> User Personas </h5>
@@ -485,7 +493,6 @@
       </button>
 
     </section>
-  </div>
     <footer id="footer">
       <img src="images/mail.png">
       <img src="images/linkedin.png">

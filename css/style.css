@@ -6,11 +6,67 @@ html{
   font-size: 10px;
   font-family: 'Montserrat', sans-serif;
 }
+a{
+  text-decoration:none;
+  font-size:1.6rem;
+}
+h1{
+  font-size:4rem;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 800;
+  margin: 2rem 0;
 
+}
+h2{
+  font-size:2.2rem;
+  line-height: 5rem;
+  margin: 2rem 0;
+}
+h3{
+  font-size:2rem;
+  font-family: 'Acumin Pro', sans-serif;
+  font-weight:bold;
+  margin: 2rem 0;
+}
+
+h4{
+  font-size:1.4rem;
+  color: rgba(0,0,0, 0.5);
+}
+
+h5{
+  font-size:1.4rem;
+  font-family: 'Acumin Pro', sans-serif;
+  text-transform: uppercase;
+  margin: 5rem 0;
+}
+p{
+  font-size:1.6rem;
+  text-align:left;
+  margin: 2rem 0;
+  line-height: 2.7rem;
+}
+button{
+  color:white;
+  font-size:2rem;
+  background-color: #000000;
+  padding: 18px 32px;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+a:visited{
+  text-decoration:none;
+}
+button > a {
+  text-decoration:none;
+  color:white;
+}
 /*navigation*/
 .nav-container{
   display:flex;
   justify-content:center;
+  box-shadow: 3px 5px 20px;
 }
 .nav{
   width:90%;
@@ -87,7 +143,7 @@ img.cardpicture{
   background-color:#000000;
   color:white;
 }
-
+/*footer*/
 .footer-pics{
   display:flex;
   justify-content: center;
@@ -104,69 +160,61 @@ img.cardpicture{
   justify-content:center;
   font-size:1.4rem;
 }
-/*#footer{
-  width:100%;
-  background-color: #000000;
-  color: white;
-  text-align:center;
-}*/
-a{
-  text-decoration:none;
+
+/*Projects*/
+.problem-container{
+  display:flex;
+  justify-content: flex-start;
+  margin: 5rem 5%;
 }
-h1{
-  font-size:4rem;
+.problem{
+  display:flex;
+  flex-direction:column;
+}
+.solution-container{
+  display:flex;
+  justify-content: flex-start;
+  margin: 5rem 5%;
+}
+.solution{
+  display:flex;
+  width:100%;
+  flex-direction:column;
+}
+.survey-container{
+  display:flex;
+  justify-content: flex-start;
+  margin: 5rem 5%;
+}
+.survey{
+  display:flex;
+  width:100%;
+  flex-direction:column;
+}
+.competitiveanalysis-container{
+  display:flex;
+  justify-content: flex-start;
+  margin: 5rem 5%;
+}
+.competitiveanalysis{
+  display:flex;
+  width:100%;
+  flex-direction:column;
+}
+.companalysis{
+  font-size: 3rem;
   font-family: acumin-pro, sans-serif;
   font-weight: 800;
-  margin: 2rem 0;
+  margin:0 2rem;
+}
+.compgroup > img{
+  width:4rem;
+  height:4rem;
+}
+.compgroup{
+  display:flex;
 
 }
-h2{
-  font-size:2.2rem;
-  line-height: 5rem;
-  margin: 2rem 0;
-}
-h3{
-  font-size:2rem;
-  font-family: 'Acumin Pro', sans-serif;
-  font-weight:bold;
-  margin: 2rem 0;
-}
-
-h4{
-  font-size:1.4rem;
-  color: rgba(0,0,0, 0.5);
-}
-
-h5{
-  font-size:1.4rem;
-  font-family: 'Acumin Pro', sans-serif;
-  text-transform: uppercase;
-  margin: 5rem 0;
-}
-p{
-  font-size:1.6rem;
-  text-align:left;
-  margin: 2rem 0;
-  line-height: 2.7rem;
-}
-button{
-  color:white;
-  font-size:2rem;
-  background-color: #000000;
-  padding: 18px 32px;
-  font-weight: bold;
-  border-radius: 0.5rem;
-  margin: 2rem 0;
-}
-a:visited{
-  text-decoration:none;
-}
-button > a {
-  text-decoration:none;
-  color:white;
-}
-/*Projects*/
-
 .firstsentence{
   font-family: 'Acumin Pro', sans-serif;
   font-weight:800;
