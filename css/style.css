@@ -47,7 +47,7 @@ p{
 }
 button{
   color:white;
-  font-size:2rem;
+  font-size:1.6rem;
   background-color: #000000;
   padding: 18px 32px;
   font-weight: bold;
@@ -146,7 +146,7 @@ img.cardpicture{
   width:100%;
   justify-content:center;
   font-size:1.4rem;
-  margin:0;
+  margin:0 0 2rem 0;
 }
 
 /*Projects*/
@@ -155,7 +155,7 @@ img.cardpicture{
   font-size: 3rem;
   font-family: acumin-pro, sans-serif;
   font-weight: 800;
-  margin:2rem 2rem;
+  margin:1rem 1rem;
 }
 .compgroup > img{
   width:4rem;
@@ -187,8 +187,21 @@ img.cardpicture{
 .color-row{
   display:flex;
 }
-
-p.firstsentence{
+h4.karla{
+  padding: 2rem 0 0 0;
+  font-weight:bold;
+  color:#000000;
+}
+h4.montserrat{
+  padding: 2rem 0 0 0;
+  font-weight:bold;
+  color:#000000;
+}
+.logos{
+  display:flex;
+  justify-content:space-around;
+}
+.firstsentence{
   font-family: 'Acumin Pro', sans-serif;
   font-weight:800;
 }
