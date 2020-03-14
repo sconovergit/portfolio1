@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Portfolio | Scott Conover </title>
     <link rel="stylesheet" href="https://use.typekit.net/kwh8jxm.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -10,37 +10,30 @@
   </head>
   <body>
 
-    <nav class="nav-container">
-      <div class="nav">
-        <div class="leftnav">
-        <a href="index.html"><img src="images/logo.png"></a>
-        <a href="index.html"><p class="name">Scott Conover</p></a>
-      </div>
-        <!--<a href="#projects">Projects</a>
-        <a href="about.html">About</a>
-        <a href="images/resume.png" target="_blank"><img src="images/download.png"></a>
-        <a href="images/resume.png" target="_blank">Resume</a>
-        <a href="contactme.html">Contact</a> -->
-        <div class="rightnav">
-        <img src="images/mobilemenu.png" class="menu">
-        </div>
-      </div>
-    </nav>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active"><img src="images/navandname.jpg"></a>
+      <a href="images/resume.png" target="_blank" class="mtop">Resume</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="images/mobilemenu.png">
+      </a>
+    </div>
     <!-- Hero Section -->
     <div id="topofpage">
-    <img src="images/wolf1.png" class="cardpicture">
+    <img src="images/wolf1.png" class="padding-top">
       <div class="container">
-        <h1>WOLF</h1>
-        <h2>Cloud storage application that combines content
+        <h1 class="project-header">WOLF</h1>
+        <h2 class="project-description">Cloud storage application that combines content
             creation, storage management,  and communication
             through a custom messenger.
         </h2>
         <h4>Design | Research | Branding </h4>
-        <a href="https://invis.io/EKUS93HJRVH" target="_blank">
         <button type="button">
-          View Prototype
-        </button>
-        </a>
+          <a href="https://invis.io/EKUS93HJRVH" target="_blank">
+         View Prototype
+       </a>
+      </button>
       </div>
 <!-- Problem Section-->
       <div class="container">
@@ -79,11 +72,11 @@
       <p>
         I used surveys to limit the scope of what users wanted.  This step showed me that uploading, creating, sharing, storing content, and collaboration were the most important features for users.  It also showed me that most users were going to be very familiar with computers and how applications work.
       </p>
-      <a href="https://forms.gle/4hWv9oZ5zRA38Ahz5" target="_blank">
       <button type="button">
-        View Survey
-      </button>
-    </a>
+        <a href="https://forms.gle/4hWv9oZ5zRA38Ahz5" target="_blank">
+       View Survey
+     </a>
+    </button>
     </div>
 <!-- Competitive Analysis Section -->
     <div class="container">
@@ -98,13 +91,14 @@
         was going to have to incorporate every single feature from these companies
         into WOLF if it was going to be a success.
       </p>
-      <a href="https://docs.google.com/document/d/15U-TaReoLXTILMU9SxTmI1Fc2sISqDy1QjljiLR5304/edit?usp=sharing" target="_blank">
       <button type="button">
-        Full Analysis
-      </button>
-    </a>
+        <a href="https://docs.google.com/document/d/15U-TaReoLXTILMU9SxTmI1Fc2sISqDy1QjljiLR5304/edit?usp=sharing" target="_blank">
+       Full Analysis
+     </a>
+    </button>
+
       <div class="compgroup">
-      <img src="images/googledrive.png">
+      <img src="images/googledrive.png" class="googledrive">
       <p class="companalysis">Google Drive</p>
     </div>
       <p>
@@ -114,7 +108,7 @@
         recently entered the market.
       </p>
     <div class="compgroup">
-      <img src="images/instagram1.png">
+      <img src="images/instagram1.png" class="instagram">
       <p class="companalysis">Instagram</p>
     </div>
       <p>
@@ -124,7 +118,7 @@
         already in the market.
       </p>
     <div class="compgroup">
-      <img src="images/pinterest.png">
+      <img src="images/pinterest.png" class="pinterest">
       <p class="companalysis">Pinterest</p>
     </div>
       <p>
@@ -146,7 +140,7 @@
         design with these users in mind.
       </p>
       <div class="center">
-      <img src="images/alexcooper.png">
+      <img src="images/alexcooper.png" class="personapicture">
       <p class="firstsentence">
         Alex Cooper
       </p>
@@ -175,7 +169,7 @@
         His work flow is much slower when having to use multiple applications.
       </p>
             <div class="center">
-      <img src="images/zachdavis.png">
+      <img src="images/zachdavis.png" class="personapicture">
       <p class="firstsentence">
         Zach Davis
       </p>
@@ -205,7 +199,7 @@
         allow the team to create documents.
       </p>
       <div class="center">
-      <img src="images/marctrujillo.png">
+      <img src="images/marctrujillo.png" class="personapicture">
       <p class="firstsentence">
         Marc Trujillo
       </p>
@@ -250,11 +244,11 @@
         Everything that was a high priority was done so because it was necessary
         for WOLF to work properly and give the user the best possible experience.
       </p>
-      <a href="https://docs.google.com/spreadsheets/d/1VmZ9kbvdEuOA6dehTtKzJb89miTnTsIMOqT1cV4zDHY/edit?usp=sharing" target="_blank">
       <button type="button">
-        View Stories
-      </button>
-    </a>
+      <a href="https://docs.google.com/spreadsheets/d/1VmZ9kbvdEuOA6dehTtKzJb89miTnTsIMOqT1cV4zDHY/edit?usp=sharing" target="_blank">
+       View Stories
+     </a>
+    </button>
       <p class="firstsentence">High</p>
       <p>Create/Edit Content</p>
       <p>Share Content in Multiple Ways</p>
@@ -280,11 +274,11 @@
         well as a visual representation of all of the necessary interactions I
         would need for WOLF.
       </p>
-      <a href="https://sketch.cloud/s/JWY2e" target="_blank">
       <button type="button">
-        View Flows
-      </button>
-      </a>
+        <a href="https://sketch.cloud/s/JWY2e" target="_blank">
+       View Flows
+        </a>
+    </button>
     </div>
 
       <div class="slideshow-container">
@@ -337,18 +331,16 @@
         in which I wanted to lay out the dashboard and homepage.  Using these
         wireframes I learned exactly where I wanted buttons and what to emphasize.
       </p>
-      <div class="container-row">
+      <button type="button">
       <a href="https://drive.google.com/drive/folders/12Wa-r4U-4dEVLrrOhZxgbi4TZitmhF6I?usp=sharing" target="_blank">
-      <button type="button">
-        Sketches
-      </button>
-      </a>
+       View Sketches
+        </a>
+    </button>
+    <button type="button">
       <a href="https://invis.io/FSU848K3RH9" target="_blank">
-      <button type="button">
-        Prototype
-      </button>
+     View Prototype
       </a>
-    </div>
+  </button>
     </div>
   <img src="images/sketch1.png" class="cardpicture">
   <img src="images/lowfid1.png" class="cardpicture">
@@ -370,11 +362,11 @@
         to find, the ease of saving content, and the obvious call to action
         buttons.
       </p>
-      <a href="https://docs.google.com/document/d/1rrgacD5vh5uefqAHrcRh8JPKJkD3vqIW9pM_AjANVIE/edit?usp=sharing" target="_blank">
       <button type="button">
-        Full Summary
-      </button>
-      </a>
+      <a href="https://docs.google.com/document/d/1rrgacD5vh5uefqAHrcRh8JPKJkD3vqIW9pM_AjANVIE/edit?usp=sharing" target="_blank">
+       Full Summary
+        </a>
+    </button>
     </div>
 <!-- Branding Section-->
     <div class="container">
@@ -390,26 +382,26 @@
       </p>
       <div class="color-row">
       <div class="colorcontainer">
-        <img src="images/coolbluesquare.png">
-        <p class="no-margin">Cool Blue</p>
-        <h4>#3A5368</h4>
+        <img src="images/coolbluesquare.png" class="colors">
+        <p class="no-margin color-type">Cool Blue</p>
+        <h4 class="no-margin color-type">#3A5368</h4>
       </div>
       <div class="colorcontainer">
-        <img src="images/royalpurplesquare.png">
-        <p class="no-margin">Royal Purple</p>
-        <h4>#6B38FB</h4>
+        <img src="images/royalpurplesquare.png" class="colors">
+        <p class="no-margin color-type">Royal Purple</p>
+        <h4 class="no-margin color-type">#6B38FB</h4>
       </div>
     </div>
     <div class="color-row">
       <div class="colorcontainer">
-        <img src="images/blacksquare.png">
-        <p class="no-margin">Black</p>
-        <h4>#000000</h4>
+        <img src="images/blacksquare.png" class="colors">
+        <p class="no-margin color-type">Black</p>
+        <h4 class="no-margin color-type">#000000</h4>
       </div>
       <div class="colorcontainer">
-        <img src="images/whitesquare.png">
-        <p class="no-margin">White</p>
-        <h4>#FFFFFF</h4>
+        <img src="images/whitesquare.png" class="colors">
+        <p class="no-margin color-type">White</p>
+        <h4 class="no-margin color-type">#FFFFFF</h4>
       </div>
     </div>
       <h4 class="karla">
@@ -437,11 +429,13 @@
       <p>
         The quick brown fox jumps over the lazy dog
       </p>
-      <div class="logos">
-        <img src="images/logo1.png">
-        <img src="images/logo2.png">
-        <img src="images/logo3.png">
-        <img src="images/logo4.png">
+        <div class="logo-row">
+        <img src="images/logo1.png" class="logo1">
+        <img src="images/logo2.png" class="logo2">
+      </div>
+      <div class="logo-row">
+        <img src="images/logo3.png" class="logo3">
+        <img src="images/logo4.png" class="logo4">
       </div>
     </div>
 <!-- Design Interations Section -->
@@ -476,18 +470,16 @@
         hierarchy.  From here I performed a preference test of a few different
         graphics for the homepage of WOLF.
       </p>
-      <div class="container-row">
+      <button type="button">
       <a href="https://docs.google.com/document/d/1acE3hHIIu9WqJEh8QVyErQ6njK6GsrjiNBX_YE3oiWQ/edit?usp=sharing" target="_blank">
-      <button type="button">
-        Usability
-      </button>
-      </a>
+      Usability Test
+        </a>
+    </button>
+    <button type="button">
       <a href="https://app.usabilityhub.com/tests/f8891b3f6fe5/results/5401039d7e8" target="_blank">
-      <button type="button">
-        Preference
-      </button>
+    Preference Test
       </a>
-    </div>
+  </button>
     </div>
 
     <div class="container">
@@ -509,10 +501,10 @@
     </div>
     <div id="footer-container">
         <div class="footer-pics">
-      <img src="images/mail.png">
-      <img src="images/linkedin.png">
-      <img src="images/instagram.png">
-      <img src="images/dribbble.png">
+      <a href="contact.html"><img src="images/mail.png" class="footpics"></a>
+      <a href="https://www.linkedin.com/in/scott-conover/"><img src="images/linkedin.png" class="footpics"></a>
+      <a href="https://www.instagram.com/conoverdesigns/"><img src="images/instagram.png" class="footpics"></a>
+      <a href="https://dribbble.com/sconover"><img src="images/dribbble.png" class="footpics"></a>
     </div>
       <div class="footer-words">
       <p>
@@ -525,5 +517,6 @@
       </p>
     </div>
     </div>
+        <script src="app.js"></script>
   </body>
 </html>

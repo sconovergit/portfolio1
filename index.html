@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Portfolio | Scott Conover </title>
-    <link rel="stylesheet" href="https://use.typekit.net/kwh8jxm.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kwh8jxm.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <nav class="nav-container">
-      <div class="nav">
-        <div class="leftnav">
-        <a href="index.html"><img src="images/logo.png"></a>
-        <a href="index.html"><p class="name">Scott Conover</p></a>
-      </div>
-        <!--<a href="#projects">Projects</a>
-        <a href="about.html">About</a>
-        <a href="images/resume.png" target="_blank"><img src="images/download.png"></a>
-        <a href="images/resume.png" target="_blank">Resume</a>
-        <a href="contactme.html">Contact</a> -->
-        <div class="rightnav">
-        <img src="images/mobilemenu.png" class="menu">
-        </div>
-      </div>
-    </nav>
-
-    <div class="container">
-        <h1> Hi! I'm Scott</h1>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active"><img src="images/navandname.jpg"></a>
+      <a href="images/resume.png" target="_blank" class="mtop">Resume</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="images/mobilemenu.png">
+      </a>
+    </div>
+    <img src="images/background.png" class="background">
+    <div class="hero-container">
+        <h1 class="hero-header"> Hi! I'm Scott</h1>
         <h2>UX Designer, Front-End Developer, and drone pilot
         extraordinaire using human centered design to create
         beautiful user experiences. </h2>
         <div class="scroll">
-        <img src="images/hand.png">
+        <img src="images/mouse.png">
       </div>
   </div>
 
@@ -44,9 +37,10 @@
           and sharing content, managing storage, and communicating
           through messenger.
         </p>
-        <a href="wolf.html">
           <button type="button">
+            <a href="wolf.html">
            View Case Study
+         </a>
         </button>
       </a>
 
@@ -59,20 +53,19 @@
         <p> Public transportation app designed for users to quickly
           access public bus ETA's, locations, cancellations, and delays.
         </p>
-        <a href="busybus.html">
-          <button type="button" class="viewcasestudy">
+          <button type="button">
+            <a href="busybus.html">
             View Case Study
+          </a>
           </button>
-        </a>
       </div>
-    </section>
 </div>
     <div id="footer-container">
         <div class="footer-pics">
-      <img src="images/mail.png">
-      <img src="images/linkedin.png">
-      <img src="images/instagram.png">
-      <img src="images/dribbble.png">
+      <a href="contact.html"><img src="images/mail.png" class="footpics"></a>
+      <a href="https://www.linkedin.com/in/scott-conover/"><img src="images/linkedin.png" class="footpics"></a>
+      <a href="https://www.instagram.com/conoverdesigns/"><img src="images/instagram.png" class="footpics"></a>
+      <a href="https://dribbble.com/sconover"><img src="images/dribbble.png" class="footpics"></a>
     </div>
       <div class="footer-words">
       <p>
@@ -85,6 +78,6 @@
       </p>
     </div>
     </div>
-
+    <script src="app.js"></script>
   </body>
 </html>
