@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Portfolio | Scott Conover </title>
     <link rel="stylesheet" href="https://use.typekit.net/kwh8jxm.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -9,28 +9,21 @@
   </head>
   <body>
 
-    <nav class="nav-container">
-      <div class="nav">
-        <div class="leftnav">
-        <a href="index.html"><img src="images/logo.png"></a>
-        <a href="index.html"><p class="name">Scott Conover</p></a>
-      </div>
-        <!--<a href="#projects">Projects</a>
-        <a href="about.html">About</a>
-        <a href="images/resume.png" target="_blank"><img src="images/download.png"></a>
-        <a href="images/resume.png" target="_blank">Resume</a>
-        <a href="contactme.html">Contact</a> -->
-        <div class="rightnav">
-        <img src="images/mobilemenu.png" class="menu">
-        </div>
-      </div>
-    </nav>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active"><img src="images/navandname.jpg"></a>
+      <a href="images/resume.png" target="_blank" class="mtop">Resume</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="images/mobilemenu.png">
+      </a>
+    </div>
     <img src="images/picofme.png" class="cardpicture">
     <div class="container">
 
       <h1>Scott Conover</h1>
 
-      <h2>I’m a student ready to start my design career.</h2>
+      <h2 class="padding-top2">I’m a student ready to start my design career.</h2>
       <p>
         I was born and raised in NJ.  The northeast had a huge impact on my work
         ethic and helped me understand many different perspectives and that
@@ -42,11 +35,12 @@
         University of South Florida.  I just finished my UX design program at Bloc
         and am ready to kickstart my career in design.
       </p>
-      <a href="images/resume.png" target="_blank">
       <button type="button">
-        Resume
-      </button>
-      </a>
+        <a href="images/resume.png" target="_blank">
+       Resume
+     </a>
+    </button>
+
     </div>
     <div id="footer-container">
         <div class="footer-pics">
@@ -66,6 +60,6 @@
       </p>
     </div>
     </div>
-
+    <script src="app.js"></script>
   </body>
 </html>
