@@ -38,6 +38,9 @@ button:hover{
   color:black;
   border: 2px solid #000000;
 }
+button:focus{
+  outline:none;
+}
 button > a {
   text-decoration:none;
   color:white;
