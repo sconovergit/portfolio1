@@ -1,0 +1,202 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size:10px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.alexpicture{
+  width: 15rem;
+  height:15rem;
+  margin-top:2rem;
+}
+.bolditalic{
+  font-family:"Nunito Sans:italic", sans-serif;
+  font-style:italic;
+  display:inline-block;
+}
+.button{
+  color:white;
+  font-size:1.6rem;
+  background-color: #42603E;
+  padding: 1.8rem 3.6rem;
+  margin: 2rem 0 0 0;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  width:20rem;
+  cursor: pointer;
+}
+.container{
+  margin-left:27rem;
+  margin-right:5rem;
+  margin-top:5rem;
+}
+.form-container{
+  display:flex;
+  justify-content: flex-start;
+  flex-direction:column;
+  margin-top:2rem;
+}
+.gallery{
+  display:grid;
+  grid-gap:20px;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-auto-rows: 25rem 25rem;
+}
+h3{
+  font-size:3rem;
+  font-weight: 800;
+  margin-top:2rem;
+}
+h4{
+  font-size:2.2rem;
+  font-weight:800;
+  margin-top:2rem;
+}
+.image{
+  transition:.5s ease;
+}
+.image:hover{
+  transform:scale(1.1);
+}
+input{
+    width:100%;
+    height:5rem;
+    border-radius:0.5rem;
+    margin:2rem 0;
+    font-size:1.6rem;
+    border:1px solid #000000;
+}
+input:focus{
+  outline-color: #42603E;
+}
+input[type=text], input[type=email], textarea, input[type=number] {
+ padding-left:1rem;
+}
+#instagram{
+  width:3rem;
+  height:3rem;
+}
+.item > img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+label{
+  font-size:1.6rem;
+  margin-top: 1rem;
+}
+.mtop{
+  margin-top:20rem;
+}
+.mtop2{
+  margin-top:7rem;
+}
+p{
+  font-size:1.6rem;
+  margin-top:2rem;
+  max-width: 80%;
+  line-height:2.2rem;
+}
+.package{
+  font-size: 2rem;
+}
+/*Navigation*/
+.sidenav {
+  height: 100%;
+  width: 22rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding-top: 5rem;
+  padding-left:5rem;
+}
+a > .aclogo{
+  padding-top:0;
+}
+.alexcooper{
+  text-transform: uppercase;
+  font-size:2rem;
+  font-weight:800;
+  cursor:pointer;
+  padding-left:2.2rem;
+  padding-top:2rem;
+  text-decoration: none;
+}
+.sidenav a, .dropbtn, .aclogo {
+  padding-left:2.2rem;
+  padding-top:2rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #000000;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  font-family:'Nunito Sans', sans-serif;
+}
+.aclogo{
+  padding-left:0;
+  padding-top:0;
+  text-align:center;
+  margin-right:2rem;
+}
+/* Add an active class to the active dropdown button */
+/* On mouse-over */
+.sidenav a:hover, .dropbtn:hover, dropdown-content a:hover, .dropbtn:focus {
+  transition: 0.2s ease;
+  font-weight:800;
+  outline:none;
+  color:#42603E;
+}
+.dropdown{
+  position:relative:
+  display:inline-block;
+}
+.dropdown-content{
+  display:none;
+  position:absolute;
+}
+.dropdown-content a{
+  color:#000000;
+  padding-top:1.5rem;
+  font-size:1.6rem;
+  text-decoration:none;
+  display:block;
+}
+.show{
+  display:block;
+}
+.sidenav .icon {
+  display: none;
+}
+@media screen and (max-width:800px){
+  .sidenav{
+    width:19rem;
+    padding-left:2rem;
+    padding-top:2rem;
+  }
+  .sidenav a, .alexcooper, .dropbtn {
+    font-size:1.6rem;
+  }
+  .container{
+    margin-left:22rem;
+    margin-top:4rem;
+  }
+  .aclogo{
+    margin-right: 4rem;
+  }
+  a > .aclogo{
+    padding-right:4rem;
+  }
+  .mtop2{
+    margin-top:0;
+  }
+  .button{
+    width:100%;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alex Cooper Photography</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <!-- Nav -->
+    <div class="sidenav" id="mySidenav">
+      <a href="index.html"><img src="images/aclogo.png" class="aclogo"></a>
+      <a href="index.html" class="alexcooper">Alex Cooper</a>
+      <a href="packages.html">Packages</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://pixieset.com" target="_blank">Client Login</a>
+      <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">
+        Portfolio
+      </button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="headshots.html">Headshots</a>
+        <a href="couples.html">Couples</a>
+        <a href="landscapes.html">Landscapes</a>
+        <a href="family.html">Family</a>
+        <a href="animals.html">Animals</a>
+        <a href="misc.html">Misc.</a>
+      </div>
+    </div>
+    <a href="https://www.instagram.com/alexcooper.photos/" target="_blank"><img src="images/instagram.png" id="instagram" class="instagram"></a>
+  </div>
+
+    <!-- Contact Section-->
+    <div class="container">
+    <p class="mtop2">Have a question?</p>
+    <p>Thinking about booking a session?</p>
+    <div class="form-container">
+    <form name="submit-to-google-sheet">
+      <label>Name</label>
+      <input name="name" type="text" placeholder="Name" required>
+      <label>Phone Number</label>
+      <input name="phone" type="number" placeholder="Phone Number">
+      <label>E-mail</label>
+      <input name="email" type="email" placeholder="E-mail" required>
+      <label>Message</label>
+      <input name="message" type="text" placeholder="Message" required>
+      <button type="submit" class="button">Submit</button>
+    </form>
+      </div>
+    </div>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycby3fOijaNzeFYf612LLeVTJQszps1GUTtuBkxeHQry_daorFSVW/exec'
+      const form = document.forms['submit-to-google-sheet']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+<script src="app.js"></script>
+  </body>
+</html>
