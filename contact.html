@@ -26,29 +26,21 @@
         <img src="images/picofme.JPG" id="shrinkpic">
         <div class="column-container">
           <h1 class="contact">Let's Talk</h1>
-          <form name="submit-to-google-sheet">
-            <label>Name</label>
-            <input name="name" type="text" placeholder="Name" required>
-            <label>E-mail</label>
-            <input name="email" type="email" placeholder="E-mail" required>
-            <label>Message</label>
-            <input name="message" type="text" placeholder="Message" required>
+          <form action="https://formspree.io/mlenjqde" method="POST">
+            <label>Name
+            <input type="text" placeholder="Name" required>
+            </label>
+            <label>E-mail
+            <input type="text" placeholder="E-mail" name="_replyto" required>
+            </label>
+            <label>Message
+            <input type="text" placeholder="Message" name="message" required>
+            </label>
             <button type="submit">Submit</button>
           </form>
           </div>
         </div>
       </div>
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycby3fOijaNzeFYf612LLeVTJQszps1GUTtuBkxeHQry_daorFSVW/exec'
-  const form = document.forms['submit-to-google-sheet']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
 
     <div id="footer-container">
       <div id="footer-row">
